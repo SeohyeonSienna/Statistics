@@ -34,7 +34,7 @@ public.lm3 <- lm(innov ~ culture*mlead + concent*mlead, data=twopublic)
 summary(public.lm3)
 
 library(rockchalk)
-plotSlopes(model=public.lm, plotx="Çõ½ÅÁ¶Á÷¹®È­", modx="Çõ½ÅÇàµ¿", modxVals="std.dev",
+plotSlopes(model=public.lm, plotx="í˜ì‹ ì¡°ì§ë¬¸í™”", modx="í˜ì‹ í–‰ë™", modxVals="std.dev",
            pch=21, col=rainbow(3), cex=1, bg="dimgray",
            main="")
 
@@ -74,4 +74,4 @@ plot(effect(term="culture:lead", mod=two.lm,
             xlevels=list(lead=c(m-s, m, m+s))), 
      lines=list(multiline=TRUE, lwd=2, lty=c(3, 2, 1),
                 col=c("royalblue", "violet", "maroon")),
-     main="»óÈ£ÀÛ¿ëµµÇ¥")
+     main="ìƒí˜¸ìž‘ìš©ë„í‘œ")
